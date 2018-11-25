@@ -6,7 +6,7 @@
         <StackLayout BackgroundColor="LightSkyBlue">
             <StackLayout HeightRequest="50" BackgroundColor="LightBlue">
                 <Label Text="Eu sou o Titulo"/>
-                <Button Text="X" Clicked="FecharModal" BackgroundColor="Transparent"/>
+                <Button Text="X" Clicked="FecharModal"/>
             </StackLayout>
             <Label Text="Eu sou um Modal"
                 VerticalOptions="CenterAndExpand" 
