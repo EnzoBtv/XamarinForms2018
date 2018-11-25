@@ -18,7 +18,6 @@ namespace App01_ConsultarCEP
         }
         void BuscarCEP(object sender, EventArgs args)
         {
-            //TODO - Validações
             string cep = CEP.Text.Trim();
             if (isValidCEP(cep))
             {
@@ -26,7 +25,7 @@ namespace App01_ConsultarCEP
                     Endereco end = ViaCEPServico.BuscarEnderecoViaCEP(cep);
                     if (end != null)
                     {
-                        Resultado.Text = string.Format("Endereço: {3} {0},{1} {2}", end.localidade, end.uf, end.logradouro, end.bairro);
+                        Resultado.Text = string.Format("Estado: {0} {1} Cidade: {2} {3} Bairro: {4} {5} Logradouro: {6} {7}", end.uf, Environment.NewLine, end.localidade, Environment.NewLine, end.bairro, Environment.NewLine, end.logradouro, Environment.NewLine);
                     }
                     else
                     {

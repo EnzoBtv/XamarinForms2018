@@ -12,7 +12,8 @@
         
         <Label Text="" x:Name="Resultado"
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="CenterAndExpand" 
+               />
     </StackLayout>
 
 </ContentPage>
