@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local ="clr-namespace:App04_HistoriaXamarin.Pages"
+             x:Class="App04_HistoriaXamarin.Master.Menu">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="#0d1f2d">
+            <StackLayout>
+                <StackLayout BackgroundColor="#ffc926" Padding="30">
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="Xamarin.fw.png"/>
+                </StackLayout>
+                <StackLayout Spacing="50">
+                    <Button FontSize="28" Text="Miguel de Icaza" TextColor="White" BackgroundColor="Transparent" BorderColor="Transparent" Clicked="GoToPerfil1"/>
+                    <Button FontSize="28" Text="Joseph Hill" TextColor="White" BackgroundColor="Transparent" BorderColor="Transparent"/>
+                    <Button FontSize="28" Text="Nat Friedman" TextColor="White" BackgroundColor="Transparent" BorderColor="Transparent"/>
+                    <Button FontSize="28" Text="Sobre a Xamarin" TextColor="White" BackgroundColor="Transparent" BorderColor="Transparent" Clicked="GoToEmpresa"/>
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <NavigationPage.BarBackgroundColor>
+                <Color>#ffc926</Color>
+            </NavigationPage.BarBackgroundColor>
+            <x:Arguments>
+                <local:Perfil1/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
